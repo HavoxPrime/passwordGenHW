@@ -16,7 +16,7 @@ body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* for the headers */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -29,7 +29,7 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* this is for the box in which the password and button reside */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -71,7 +71,7 @@ header {
   display: block;
   clear: both;
 }
-
+/* this is for the button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -96,7 +96,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/* this is for the text box in which the password is placed */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
