@@ -3,7 +3,7 @@
 ## Description
 
 This is a password generator that i finished
-![Password generator with a password filed in](https://github.com/HavoxPrime/portfolio/blob/main/assets/Images/SM_Portfolio_Picture.pdf)
+![Password generator with a password filed in](https://github.com/HavoxPrime/passwordGenHW/blob/main/passwordExample.png)
 
 - Before i started the html and css were already complete so i just added comments to them.
 - the js needed prompts for password length and what kinds of characters to use.
