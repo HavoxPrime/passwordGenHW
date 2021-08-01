@@ -1,8 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// A special tool well save for later :)
-var validated = false;
-// bunch of arrays that hold different chars
+// A suprise tool well save for later :)
+var validLength = false;
+// bunch of arrays that hold different characters
 var uppercaseChars = [
   "A",
   "B",
@@ -93,18 +93,18 @@ generateBtn.addEventListener("click", writePassword);
 
 //initial prompt for the password length
 var passLength = prompt(
-  "Please choose a password length betwene 8 and 128 charecters long.",
+  "Please choose a password length betwene 8 and 128 characters long.",
   "Password Length"
 );
 //if the password length is outside acceptable values it sticks here till it is
 if (passLength > 128 || passLength < 8) {
-  while (validated == false) {
+  while (validLength == false) {
     passLength = prompt(
-      "You must choose a password length betwene 8 and 128 charecters long.",
+      "You must choose a password length betwene 8 and 128 characters long.",
       "Password Length"
     );
     if (passLength <= 128 && passLength >= 8) {
-      validated = true;
+      validLength = true;
     }
   }
 }
