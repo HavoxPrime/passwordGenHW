@@ -96,14 +96,17 @@ var passLength = prompt(
   "Please choose a password length betwene 8 and 128 characters long.",
   "Password Length"
 );
+console.log(isNaN(passLength));
 //if the password length is outside acceptable values it sticks here till it is
-if (passLength > 128 || passLength < 8) {
+if (passLength > 128 || passLength < 8 || isNaN(passLength) == true) {
+  console.log(isNaN(passLength));
   while (validLength == false) {
     passLength = prompt(
       "You must choose a password length betwene 8 and 128 characters long.",
       "Password Length"
     );
-    if (passLength <= 128 && passLength >= 8) {
+    console.log(isNaN(passLength));
+    if (passLength <= 128 && passLength >= 8 && isNaN(passLength) == false) {
       validLength = true;
     }
   }
@@ -142,5 +145,6 @@ function generatePassword() {
   for (i = 1; i <= passLength; i++) {
     pass += validChars[Math.floor(Math.random() * validChars.length)];
   }
+  console.log(validChars);
   return pass;
 }
